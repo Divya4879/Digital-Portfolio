@@ -7,25 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                },
-            },
-        }
-    </script>
-    <style>
-        .custom-transition {
-            transition: all 0.3s ease;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
-<body class="bg-white dark:bg-pink-900 text-pink-800 dark:text-pink-200 custom-transition">
+<body class="bg-white dark:bg-pink-900 text-pink-900 dark:text-pink-200 custom-transition">
     <header class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-pink-900 shadow-md custom-transition">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="text-xl font-bold">My Digital Resume</a>
@@ -43,12 +27,12 @@
     </header>
 
     <main class="pt-16">
-        <section id="hero" class="min-h-screen flex items-center justify-center bg-pink-100 dark:bg-pink-800 custom-transition">
+        <section id="hero" class="min-h-screen flex items-center justify-center bg-pink-100 dark:bg-pink-900 custom-transition">
             <div class="container mx-auto px-6 text-center">
                 <img src="images/profile-image.png" alt="Divya" class="rounded-full w-48 h-48 mx-auto mb-8 shadow-lg">
-                <h1 class="text-4xl font-bold mb-4">Divya</h1>
+                <h1 class="text-6xl font-bold mb-4">Divya</h1>
                 <p class="text-xl mb-8">Web Developer</p>
-                <p class="max-w-2xl mx-auto mb-8"> A passionate web developer and AI enthusiast, always exploring new
+                <p class="max-w-2xl mx-auto mb-8 font-bold"> A passionate web developer and AI enthusiast, always exploring new
                     technologies and pushing creative boundaries. Skilled in crafting
                     visually stunning designs using only CSS, I thrive on curiosity,
                     innovation, and lifelong learning.</p>
@@ -58,7 +42,7 @@
 
         <section id="about" class="py-20 bg-white dark:bg-pink-900 custom-transition">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+                <h2 class="text-5xl font-bold mb-8 text-center">About Me</h2>
                 <div class="max-w-3xl mx-auto">
                     <p class="mb-4"> I have actively participated in technical challenges and hackathons in
                         web development, constantly expanding my skills. Notable achievements
@@ -75,9 +59,9 @@
             </div>
         </section>
 
-        <section id="projects" class="py-20 bg-pink-100 dark:bg-pink-800 custom-transition">
+        <section id="projects" class="py-20 bg-pink-100 dark:bg-pink-900 custom-transition">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+                <h2 class="text-5xl font-bold mb-8 text-center">Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Project 1- Love Language Discovery -->
                      
@@ -86,7 +70,7 @@
                         <a href="https://divya4879.github.io/Love-Language" target="_blank">
                             <img src="images/love-language.png" alt="Love Language Discovery" class="w-full h-48 object-cover"></a>
                         <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2">Love Language Discovery</h3>
+                            <h3 class="font-bold text-2xl mb-2">Love Language Discovery</h3>
                             <p class="text-pink-700 dark:text-pink-300">A beautiful and interactive website to help users discover and understand their primary love language. This project helps individuals better understand how they give and receive love through an engaging quiz, stories, and daily challenges.</p>
                         </div>
                     </div>
@@ -96,7 +80,7 @@
                         <img src="images/study-guide.png" alt="Study Guide" class="w-full h-48 object-cover">
                         </a>
                         <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2">Study Guide</h3>
+                            <h3 class="font-bold text-2xl mb-2">Study Guide</h3>
                             <p class="text-pink-700 dark:text-pink-300">This project is a AI-based learning assistant that leverages the Gemini AI API to provide educational tools and resources. It includes features for generating explanations, quizzes, analyzing knowledge, and creating study plans.</p>
                         </div>
                     </div>
@@ -106,7 +90,7 @@
                         <img src="images/workout-planner.png" alt="Workout Planner" class="w-full h-48 object-cover">
                         </a>
                         <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2">Workout Planner</h3>
+                            <h3 class="font-bold text-2xl mb-2">Workout Planner</h3>
                             <p class="text-pink-700 dark:text-pink-300">The AI Workout Planner is a web-based application designed to create personalized, progressive workout plans tailored to an individual's fitness goals, body parameters, and available equipment. Leveraging AI capabilities, this planner ensures variety, safety, and progression in every workout.</p>
                         </div>
                     </div>
@@ -116,7 +100,7 @@
                         <img src="images/Nineties-portfolio.png" alt="90s themed Portfolio" class="w-full h-48 object-cover">
                         </a>
                         <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2">90s themed Portfolio</h3>
+                            <h3 class="font-bold text-2xl mb-2">90s themed Portfolio</h3>
                             <p class="text-pink-700 dark:text-pink-300">A nostalgic 90s-themed portfolio with pixelated graphics, neon colors, and retro web elements. Built for the Codedex Hackathon, it blends vintage aesthetics with modern responsiveness for a fun yet functional showcase of my work.</p>
                         </div>
                     </div>
@@ -124,7 +108,7 @@
                     <div class="bg-white dark:bg-pink-700 rounded-lg shadow-md overflow-hidden custom-transition">
                         <img src="images/christmas-tree.png" alt="Christmas Tree- CSS Art" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2">Christmas Tree- CSS Art</h3>
+                            <h3 class="font-bold text-2xl mb-2">Christmas Tree- CSS Art</h3>
                             <p class="text-pink-700 dark:text-pink-300">A festive Christmas tree designed entirely with HTML and CSS, featuring layered branches and a glowing star. This project highlights the creativity and power of pure CSS for artistic web design.</p>
                         </div>
                     </div>
@@ -139,43 +123,43 @@
 
         <section id="skills" class="py-20 bg-white dark:bg-pink-900 custom-transition">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
-                <div class="max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6">
-                    <div class="bg-pink-100 dark:bg-pink-800 rounded-lg p-4 text-center custom-transition">
+                <h2 class="text-5xl font-bold mb-8 text-center">Skills</h2>
+                <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="bg-pink-100 dark:bg-pink-900 rounded-lg p-4 text-center custom-transition">
                         <i data-feather="code" class="mx-auto mb-2"></i>
-                        <p>Web Development</p>
+                        <p class="font-bold">Web Development</p>
                     </div>
-                    <div class="bg-pink-100 dark:bg-pink-800 rounded-lg p-4 text-center custom-transition">
+                    <div class="bg-pink-100 dark:bg-pink-900 rounded-lg p-4 text-center custom-transition">
                         <i data-feather="layout" class="mx-auto mb-2"></i>
-                        <p>UI/UX Design</p>
+                        <p class="font-bold">UI/UX Design</p>
                     </div>
-                    <div class="bg-pink-100 dark:bg-pink-800 rounded-lg p-4 text-center custom-transition">
+                    <div class="bg-pink-100 dark:bg-pink-900 rounded-lg p-4 text-center custom-transition">
                         <i data-feather="cpu" class="mx-auto mb-2"></i>
-                        <p>AI Agents Development</p>
+                        <p class="font-bold">AI Agents Development</p>
                     </div>
                     
-                    <div class="bg-pink-100 dark:bg-pink-800 rounded-lg p-4 text-center custom-transition">
+                    <div class="bg-pink-100 dark:bg-pink-900 rounded-lg p-4 text-center custom-transition">
                         <i data-feather="zap" class="mx-auto mb-2"></i>
-                        <p>Generative AI Projects</p>
+                        <p class="font-bold">Generative AI Projects</p>
                     </div>
-                    <div class="bg-pink-100 dark:bg-pink-800 rounded-lg p-4 text-center custom-transition">
+                    <div class="bg-pink-100 dark:bg-pink-900 rounded-lg p-4 text-center custom-transition">
                         <i data-feather="git-branch" class="mx-auto mb-2"></i>
-                        <p>Version Control</p>
+                        <p class="font-bold">Version Control</p>
                     </div>
                     
-                    <div class="bg-pink-100 dark:bg-pink-800 rounded-lg p-4 text-center custom-transition">
+                    <div class="bg-pink-100 dark:bg-pink-900 rounded-lg p-4 text-center custom-transition">
                         <i data-feather="trending-up" class="mx-auto mb-2"></i>
-                        <p>Problem Solving</p>
+                        <p class="font-bold">Problem Solving</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="py-20 bg-pink-100 dark:bg-pink-800 custom-transition">
+        <section id="contact" class="py-20 bg-pink-100 dark:bg-pink-900 custom-transition">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+                <h2 class="text-5xl font-bold mb-8 text-center">Contact Me</h2>
                 <div class="max-w-md mx-auto">
-                    <p class="text-center mb-8">Feel free to reach out for collaborations or just a friendly hello</p>
+                    <p class="text-center mb-8 font-bold text-xl">Feel free to reach out for collaborations or just a friendly hello</p>
                     <div class="flex justify-center space-x-4">
                         <a href="mailto:divyasingh0803@gmail.com" class="text-red-500 hover:text-blue-600">
                             <i data-feather="mail" class="w-8 h-8"></i>
@@ -194,58 +178,13 @@
 
     <footer class="bg-white dark:bg-pink-900 py-6  border-t border-pink-300 dark:border-pink-700">
         <div class="container mx-auto px-6 text-center">
-            <p class="text-pink-700 dark:text-pink-300">Made with love by <a href="https://x.com/DivsinghDev" target="_blank" rel="noopener noreferrer" class="hover:text-purple-600">Divya</a> for Digital Portfolio Showdown Challenge by CodeTikki.</p>
+            <p class="text-pink-700 dark:text-pink-300 font-bold">Made with 💖 by <a href="https://x.com/DivsinghDev" target="_blank" rel="noopener noreferrer" class="hover:text-purple-600">Divya</a> for Digital Portfolio Showdown Challenge by CodeTikki.</p>
         </div>
     </footer> 
 
     
     
 
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            // Initialize Feather icons
-            feather.replace();
-
-            // Dark mode toggle
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            const htmlElement = document.documentElement;
-
-            darkModeToggle.addEventListener('click', () => {
-                htmlElement.classList.toggle('dark');
-            });
-
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-
-            // Add scroll reveal animation
-            window.addEventListener('scroll', revealOnScroll);
-        });
-
-        function revealOnScroll() {
-            var reveals = document.querySelectorAll(".custom-transition");
-
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("opacity-100");
-                    reveals[i].classList.remove("opacity-0");
-                } else {
-                    reveals[i].classList.add("opacity-0");
-                    reveals[i].classList.remove("opacity-100");
-                }
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
